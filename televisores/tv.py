@@ -65,4 +65,4 @@ class TV:
         _numTV=numTV
 
     def getNumTV():
-        return (_numTV)
+        return TV._numTV
