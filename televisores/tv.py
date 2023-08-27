@@ -64,5 +64,5 @@ class TV:
     def setNumTV(numTV):
         _numTV=numTV
 
-    def getNumTV(self):
-        return self._numTV
+    def getNumTV():
+        return (_numTV)
