@@ -9,10 +9,8 @@ class TV:
         self._estado=estado
         self._volumen=1
         self._control=None
-
         TV._numTV+=1
     
-
     def getMarca(self):
         return self._marca
     def setMarca(self, marca):
@@ -21,18 +19,18 @@ class TV:
     def getCanal(self):
         return self._canal
     def setCanal(self, canal):
-        if((self._estado==True) and canal>=1 and canal<=120):
-            self._canal=canal
+        if(self._estado and canal>=1 and canal<=120):  ###
+            self._canal=canal                                  ###
 
     def getPrecio(self):
         return self._precio
     def setPrecio(self, precio):
-        self._nombre=precio
+        self._precio=precio
 
     def getVolumen(self):
         return self._volumen
-    def setVolumen(self, volumen):
-        if((self._estado==True) and volumen>=0 and volumen<=7):
+    def setVolumen(self, volumen):                                  ####
+        if(self._estado and volumen>=0 and volumen<=7):             ####
             self._volumen=volumen
 
     def getControl(self):
