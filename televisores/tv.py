@@ -61,8 +61,8 @@ class TV:
         if(self._estado and self._volumen>0):
             self._volumen -= 1
 
-    def setNumTV(cls, numTV):
-        cls._numTV=numTV
+    def setNumTV(cls):
+        cls._numTV
 
     def getNumTV(cls):
         return cls._numTV
