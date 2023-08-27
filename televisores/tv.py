@@ -1,16 +1,12 @@
 class TV:
-    def _init__(self,marca, canal, precio, estado, volumen, control):
+    def _init__(self,marca, estado):
         self._marca=marca
-        self._canal=canal
-        self._precio=precio
-        self._estado=estado
-        self._volumen=volumen
-        self._control=control
-
-    def _init__(self):
         self._canal=1
-        self._volumen=1
         self._precio=500
+        self._estado=estado
+        self._volumen=1
+        self._control=None
+        TV.numTV+=1
     
     numTV=0
 
